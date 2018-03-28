@@ -45,6 +45,14 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- slack integration -->
+		<dependency>
+			<groupId>com.ullink.slack</groupId>
+			<artifactId>simpleslackapi-lib</artifactId>
+			<version>0.5.1</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
