@@ -21,10 +21,9 @@ public class SlackUserMessageSender {
         this.session = session;
     }
 
-    @Autowired
-    public void sendDirectMessageToAUser() {
+    public void sendDirectMessageToAUser(String messageWithVacancy) {
         SlackUser user = session.findUserByUserName(userWhoWillRecieve);
-        session.sendMessageToUser(user, "" + count++, null);
+        session.sendMessageToUser(user, messageWithVacancy, null);
     }
 
 }
