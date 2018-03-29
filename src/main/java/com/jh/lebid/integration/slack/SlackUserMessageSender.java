@@ -12,8 +12,6 @@ public class SlackUserMessageSender {
     @Value("${user.who.will.receive}")
     private String userWhoWillRecieve;
 
-    private Integer count = 0;
-
     private final SlackSession session;
 
     @Autowired
